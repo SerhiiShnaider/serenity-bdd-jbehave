@@ -1,6 +1,17 @@
+buildscript {
+    repositories {
+        mavenLocal()
+        jcenter()
+    }
+    dependencies {
+        classpath("net.serenity-bdd:serenity-gradle-plugin:1.1.1")
+    }
+}
 plugins {
     id 'java'
 }
+
+apply plugin: 'net.serenity-bdd.aggregator'
 
 group 'sernityJbehave'
 version '1.0-SNAPSHOT'
